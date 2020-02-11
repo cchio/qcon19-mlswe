@@ -13,7 +13,7 @@ def loadFile(name):
     data = list(set(data))
     result = []
     for d in data:
-        d = str(urllib.parse.unquote(d), 'utf-8')
+        d = urllib.parse.unquote(d)
         result.append(d)
     return result
 
